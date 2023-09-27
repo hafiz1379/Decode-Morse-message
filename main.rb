@@ -23,7 +23,8 @@ MORSE_CODE_DICT = {
   def decode_message(morse_message)
     morse_message.split('   ').map { |morse_word| decode_word(morse_word) }.join(' ')
   end
-
-  
+  morse_message = ".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ..."
+  decoded_message = decode_message(morse_message)
+  puts decoded_message
 
   
